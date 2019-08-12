@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Galaxy Simulation</title>
+		<style>
+			body { margin: 0; font-family: Sans-Serif }
+			canvas { width: 100%; height: 100% }
+			#info {
+			position: absolute;
+			top: 10px;
+			width: 100%;
+			text-align: left;
+			left: 5px;
+			z-index: 200;
+			display:block;
+			color: #ffffff;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="js/three.js"></script>
+		<script src="js/OrbitControls.js"></script>
+		<script src="util.js"></script>
+		<script src="distribution.js"></script>
+		<script src="stargen.js"></script>
+		<script src="objects.js"></script>
+		<script src="starfield.js"></script>
+		
+		<div id="info">
+			<h1>Galaxy</h1>
+			<p> Displaying 9000 stars and 4 planetary systems.</p>
+			<p> Note that this representaiton is not to scale.</p>
+
+			<img src="img/toggler.png" width=100 onclick="toggler()">
+		</div>
+			<p style="position: absolute; bottom: 5px; color: #ffffff; z-index: 200; right: 5px; text-align: right;">&#169; 2019, Michael Pascale</p>
+
+	</body>
+</html>
