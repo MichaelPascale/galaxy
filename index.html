@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Galaxy Visualization</title>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway|Cousine" rel="stylesheet">
+        <link href="https://pascale.cc/css/main_style.css" rel="stylesheet">
+        <style>
+            body { margin: 0;}
+            canvas { width: 100%; height: 100% }
+            #info {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: left;
+            left: 5px;
+            z-index: 200;
+            display:block;
+            color: #ffffff;
+            }
+            p, h1 { color: #ffffff;}
+        </style>
+    </head>
+    <body>
+        <script src="js/three.js"></script>
+        <script src="js/OrbitControls.js"></script>
+        <script src="util.js"></script>
+        <script src="distribution.js"></script>
+        <script src="stargen.js"></script>
+        <script src="objects.js"></script>
+        <script src="starfield.js"></script>
+
+        <div id="info">
+            <p><a href="https://pascale.cc/projects">return to pascale.cc</a></p>
+            <h1>Galaxy Visualization</h1>
+            <p> Displaying 9000 stars and 4 planetary systems.</p>
+            <p> Note that this representaiton is not to scale.</p>
+
+            <button onclick="toggler()">Toggle Rotation</button>
+        </div>
+            <p style="position: absolute; bottom: 5px; color: #ffffff; z-index: 200; right: 5px; text-align: right;">&#169; 2019, Michael Pascale<br>Utilizing <a href="https://threejs.org">three.js</a></p>
+
+    </body>
+</html>
